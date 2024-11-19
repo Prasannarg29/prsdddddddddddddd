@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="bio-data.html">Bio-data</a>
+        </nav>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("nav a").on("click", function() {
+            $("nav a").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
+
+    <main>
+        <h1>Bio-data</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>January 1, 1990</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>123 Main St, City, Country</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>

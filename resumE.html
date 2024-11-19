@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="bio-data.html">Bio-data</a>
+        </nav>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("nav a").on("click", function() {
+            $("nav a").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
+
+    <main>
+        <h1>Resume</h1>
+        <ul>
+            <li><strong>Experience:</strong> Software Developer at XYZ</li>
+            <li><strong>Education:</strong> B.Sc in Computer Science</li>
+            <li><strong>Skills:</strong> HTML, CSS, JavaScript, Python</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
